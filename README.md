@@ -30,9 +30,6 @@
 <p align="center"><i>Versatilist · Passionately curious · Keen learner — I love solving hard problems and building things that scale.</i></p>
 
 <p align="center">
-  <a href="https://github.com/mayurprajapati/mayurprajapati/blob/main/resume/index.html">
-    <img alt="Resume (Web)" src="https://img.shields.io/badge/Resume-Web-2563eb?style=for-the-badge&logo=readme&logoColor=white" />
-  </a>
   <a href="https://github.com/mayurprajapati/mayurprajapati/blob/main/blob/Mayur%20Prajapati%20Resume%20v2.pdf">
     <img alt="Resume (PDF)" src="https://img.shields.io/badge/Resume-PDF-1d4ed8?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" />
   </a>
