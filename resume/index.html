@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mayur Prajapati — Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --ink: #0f172a;
+    --ink-soft: #1e293b;
+    --muted: #64748b;
+    --muted-soft: #94a3b8;
+    --accent: #2563eb;
+    --accent-deep: #1d4ed8;
+    --rule: #e2e8f0;
+    --chip: #f1f5f9;
+    --chip-ink: #334155;
+    --paper: #ffffff;
+    --sidebar: #f8fafc;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: #e5e7eb;
+    color: var(--ink);
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size: 10.5px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 16px auto;
+    background: var(--paper);
+    box-shadow: 0 10px 40px rgba(15, 23, 42, 0.15);
+    display: grid;
+    grid-template-columns: 65mm 1fr;
+    grid-template-rows: auto auto 1fr;
+    align-content: start;
+    overflow: hidden;
+  }
+
+  /* ============ HEADER ============ */
+  .masthead {
+    grid-column: 1 / -1;
+    padding: 15px 22px 13px;
+    background: linear-gradient(120deg, #0f172a 0%, #1e293b 55%, #1d4ed8 140%);
+    color: #fff;
+    position: relative;
+  }
+  .masthead::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 88% -20%, rgba(37, 99, 235, 0.55), transparent 45%);
+    pointer-events: none;
+  }
+  .name {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    line-height: 1;
+  }
+  .name span { color: #93c5fd; }
+  .title {
+    margin-top: 5px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: #cbd5e1;
+  }
+  .title b { color: #93c5fd; font-weight: 700; }
+  .contact {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 16px;
+    font-size: 9.5px;
+    position: relative;
+    z-index: 1;
+  }
+  .contact a, .contact span {
+    color: #e2e8f0;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+  }
+  .contact a:hover { color: #fff; }
+  .contact svg { width: 11px; height: 11px; fill: #93c5fd; flex: none; }
+
+  /* ============ METRICS STRIP ============ */
+  .metrics {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: #0b1220;
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .metric {
+    padding: 8px 10px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.07);
+  }
+  .metric:last-child { border-right: none; }
+  .metric .num { font-size: 15px; font-weight: 800; color: #60a5fa; line-height: 1; }
+  .metric .lbl { font-size: 7.6px; letter-spacing: 0.6px; text-transform: uppercase; color: #94a3b8; margin-top: 3px; }
+
+  /* ============ COLUMNS ============ */
+  .sidebar {
+    background: var(--sidebar);
+    border-right: 1px solid var(--rule);
+    padding: 15px 15px 20px;
+  }
+  .main {
+    padding: 15px 20px 20px;
+  }
+
+  .sec { margin-bottom: 17px; }
+  .sec:last-child { margin-bottom: 0; }
+
+  .sec-title {
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 9px;
+  }
+  .sec-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    border-radius: 2px;
+  }
+  .main .sec-title::after { background: linear-gradient(90deg, var(--rule), transparent); }
+
+  /* ---- sidebar skill groups ---- */
+  .skill-group { margin-bottom: 9px; }
+  .skill-group:last-child { margin-bottom: 0; }
+  .skill-label {
+    font-size: 8.6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 4px; }
+  .chip {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 8.4px;
+    font-weight: 500;
+    background: #fff;
+    color: var(--chip-ink);
+    border: 1px solid var(--rule);
+    border-radius: 5px;
+    padding: 2.5px 6px;
+    line-height: 1.25;
+  }
+  .chip.key {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* ---- sidebar generic rows ---- */
+  .edu-item, .highlight-item { margin-bottom: 8px; }
+  .edu-item:last-child, .highlight-item:last-child { margin-bottom: 0; }
+  .edu-deg { font-weight: 700; color: var(--ink); font-size: 9.8px; }
+  .edu-meta { color: var(--muted); font-size: 8.8px; margin-top: 1px; }
+
+  .highlight-item {
+    display: flex;
+    gap: 7px;
+    align-items: flex-start;
+    font-size: 9.3px;
+    color: var(--ink-soft);
+    line-height: 1.35;
+  }
+  .highlight-item .star {
+    color: var(--accent);
+    font-weight: 800;
+    flex: none;
+    line-height: 1.35;
+  }
+  .highlight-item b { color: var(--ink); font-weight: 700; }
+
+  /* ---- summary ---- */
+  .summary {
+    font-size: 10.4px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+  }
+  .summary b { color: var(--ink); font-weight: 700; }
+
+  /* ---- experience ---- */
+  .job { margin-bottom: 14px; }
+  .job:last-child { margin-bottom: 0; }
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .job-role { font-size: 11.5px; font-weight: 800; color: var(--ink); }
+  .job-co { font-size: 10px; font-weight: 600; color: var(--accent-deep); }
+  .job-date {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 8.6px;
+    font-weight: 500;
+    color: var(--muted);
+    white-space: nowrap;
+    flex: none;
+  }
+  .job-sub { font-size: 8.8px; color: var(--muted); margin-bottom: 5px; }
+
+  ul.bullets { list-style: none; margin-top: 4px; }
+  ul.bullets li {
+    position: relative;
+    padding-left: 13px;
+    margin-bottom: 4.5px;
+    font-size: 10.2px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+  }
+  ul.bullets li::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 5px;
+    width: 4px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 50%;
+  }
+  ul.bullets li b { color: var(--ink); font-weight: 700; }
+
+  /* ---- projects ---- */
+  .proj { margin-bottom: 10px; }
+  .proj:last-child { margin-bottom: 0; }
+  .proj-head { display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap; }
+  .proj-name { font-size: 10.4px; font-weight: 800; color: var(--ink); }
+  .proj-stack {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 8.2px;
+    color: var(--accent-deep);
+    font-weight: 500;
+  }
+  .proj-desc { font-size: 9.8px; color: var(--ink-soft); line-height: 1.45; margin-top: 2px; }
+  .proj-desc b { color: var(--ink); font-weight: 700; }
+
+  /* ============ PRINT ============ */
+  @page { size: A4; margin: 0; }
+  @media print {
+    html, body { background: #fff; font-size: 9.7px; }
+    .page {
+      margin: 0;
+      box-shadow: none;
+      width: 210mm;
+      min-height: 297mm;
+    }
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="masthead">
+      <div class="name">MAYUR <span>PRAJAPATI</span></div>
+      <div class="title">Software Engineer &nbsp;·&nbsp; <b>Java</b> · Backend · <b>Agentic AI</b> &amp; Platform Tooling</div>
+      <div class="contact">
+        <span>
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.5.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
+          +91 635 133 4389
+        </span>
+        <a href="mailto:mayurprajapati1042@gmail.com">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          mayurprajapati1042@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/mayurengineer">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM8.3 18.3H5.7V9.8h2.6v8.5zM7 8.6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm11.3 9.7h-2.6v-4.1c0-1-.4-1.7-1.3-1.7-.7 0-1.1.5-1.3 1-.1.2-.1.4-.1.7v4.1h-2.6V9.8h2.6v1.1c.3-.5 1-1.3 2.4-1.3 1.8 0 3 1.1 3 3.6v5.1z"/></svg>
+          linkedin.com/in/mayurengineer
+        </a>
+        <a href="https://github.com/mayurprajapati">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.5-1.1-4.5-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.5 4.9.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+          github.com/mayurprajapati
+        </a>
+        <a href="https://medium.com/@mayurengineer">
+          <svg viewBox="0 0 24 24"><path d="M4.4 7.5a.9.9 0 0 0-.3-.7L2.3 4.6v-.3h5.4l4.2 9.2 3.7-9.2H21v.3l-1.5 1.5a.5.5 0 0 0-.2.5v11a.5.5 0 0 0 .2.5l1.5 1.5v.3h-7.4v-.3l1.5-1.5c.2-.2.2-.2.2-.5V8.3l-4.3 10.8h-.6L5.7 8.3v7.2c0 .4.1.7.4 1l2 2.4v.3H2.3v-.3l2-2.4c.3-.3.4-.6.4-1V7.5z"/></svg>
+          medium.com/@mayurengineer
+        </a>
+      </div>
+    </header>
+
+    <!-- ===================== METRICS ===================== -->
+    <div class="metrics">
+      <div class="metric"><div class="num">7+</div><div class="lbl">Years Engineering</div></div>
+      <div class="metric"><div class="num">350+</div><div class="lbl">Bots / Services Shipped</div></div>
+      <div class="metric"><div class="num">1,200+</div><div class="lbl">CI/CD Jenkins Jobs</div></div>
+      <div class="metric"><div class="num">30%</div><div class="lbl">Productivity Gains</div></div>
+    </div>
+
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="sidebar">
+
+      <div class="sec">
+        <div class="sec-title">Tech Stack</div>
+
+        <div class="skill-group">
+          <div class="skill-label">Languages</div>
+          <div class="chips">
+            <span class="chip key">Java</span>
+            <span class="chip key">Python</span>
+            <span class="chip">Groovy</span>
+            <span class="chip">SQL</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Backend &amp; Frameworks</div>
+          <div class="chips">
+            <span class="chip key">Spring / Spring Boot</span>
+            <span class="chip key">Hibernate / JPA</span>
+            <span class="chip key">Flask</span>
+            <span class="chip">gRPC</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">WebSockets</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">DevOps &amp; CI/CD</div>
+          <div class="chips">
+            <span class="chip key">Jenkins</span>
+            <span class="chip">Shared Libraries</span>
+            <span class="chip">GitLab CI/CD</span>
+            <span class="chip">Maven</span>
+            <span class="chip">Gradle</span>
+            <span class="chip">Git</span>
+            <span class="chip">Nginx</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Data Stores</div>
+          <div class="chips">
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Firestore</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Libraries &amp; Tooling</div>
+          <div class="chips">
+            <span class="chip">Apache POI</span>
+            <span class="chip">Guava</span>
+            <span class="chip">Lombok</span>
+            <span class="chip">OpenCSV</span>
+            <span class="chip">FFmpeg</span>
+            <span class="chip">pandas</span>
+            <span class="chip">Selenium</span>
+            <span class="chip">Playwright</span>
+            <span class="chip">RestAssured</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">AI &amp; Agentic</div>
+          <div class="chips">
+            <span class="chip key">Agentic AI</span>
+            <span class="chip key">LLM Integration</span>
+            <span class="chip">AI Agents</span>
+            <span class="chip">Prompt Engineering</span>
+            <span class="chip">GPT</span>
+            <span class="chip">Gemini / Vertex</span>
+            <span class="chip">MCP</span>
+            <span class="chip">Cursor</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Practices</div>
+          <div class="chips">
+            <span class="chip">Agile / Scrum</span>
+            <span class="chip">Code Review</span>
+            <span class="chip">System Design</span>
+            <span class="chip">Mentoring</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec">
+        <div class="sec-title">Highlights</div>
+        <div class="highlight-item"><span class="star">&#9733;</span><span><b>Spotlight of the Month</b> &mdash; Briq</span></div>
+        <div class="highlight-item"><span class="star">&#9733;</span><span>VP recognition for scaling automation &amp; deployment efficiency</span></div>
+        <div class="highlight-item"><span class="star">&#9733;</span><span>Published engineering author on <b>Medium</b> (WebSockets, systems)</span></div>
+      </div>
+
+      <div class="sec">
+        <div class="sec-title">Education</div>
+        <div class="edu-item">
+          <div class="edu-deg">B.C.A &mdash; Computer Application</div>
+          <div class="edu-meta">Gujarat &middot; 2019</div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- ===================== MAIN ===================== -->
+    <main class="main">
+
+      <div class="sec">
+        <div class="sec-title">Profile</div>
+        <p class="summary">
+          <b>Software Engineer with 7+ years</b> building JVM platforms, internal developer tooling, and CI/CD systems that scale engineering throughput. Designed a <b>Java framework</b> powering 350+ production bots, a <b>Reflection-driven execution engine</b>, and <b>WebSocket-based</b> remote-execution tooling &mdash; and pioneered <b>agentic-AI/LLM</b> workflows that automate test-data generation and analysis. Comfortable across the stack &mdash; <b>Java, Spring/Hibernate, Python/Flask, Groovy, Jenkins</b> &mdash; with a track record of modernizing legacy systems and shipping measurable efficiency gains.
+        </p>
+      </div>
+
+      <div class="sec">
+        <div class="sec-title">Experience</div>
+
+        <div class="job">
+          <div class="job-head">
+            <div><span class="job-role">Senior Software Engineer</span> &nbsp;<span class="job-co">Briq Data Analytics Pvt. Ltd.</span></div>
+            <div class="job-date">Apr 2021 &ndash; Present</div>
+          </div>
+          <ul class="bullets">
+            <li>Architected a <b>Java (Maven) automation &amp; execution platform</b> powering <b>350+ production bots</b> across web, desktop, API, and OCR surfaces &mdash; standardizing config, execution, and reporting.</li>
+            <li>Led a <b>zero-downtime migration of 1,200+ modules off JUnit</b> onto an in-house Reflection-based runner, cutting compile overhead and dramatically simplifying maintenance.</li>
+            <li>Owned CI/CD at scale: <b>1,200+ Jenkins jobs</b> orchestrated via a custom <b>Groovy Shared Library</b> for cross-platform (Unix/Windows) pipelines on GitLab CI/CD.</li>
+            <li>Designed custom <b>agentic-AI test agents</b> (GPT/Gemini-driven) embedded into automation workflows to auto-generate machine-readable test data, expanding data-driven coverage; drove design &amp; merge-request reviews and team knowledge-sharing.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-head">
+            <div><span class="job-role">Software Engineer &mdash; QA &amp; Tooling</span> &nbsp;<span class="job-co">Oracle</span></div>
+            <div class="job-date">Jul 2019 &ndash; Apr 2021</div>
+          </div>
+          <ul class="bullets">
+            <li>Built the <b>HCM Data Search Utility</b> end-to-end as a full-stack developer, driving a <b>30% productivity boost</b> for the automation team.</li>
+            <li>Revamped the <b>HCM Report Generator</b> &mdash; reduced report load time and shipped new reporting features.</li>
+            <li>Developed and maintained <b>200+ Java automation scripts</b> (OATS/KWiK) and extended the KWiK recorder with a new capability for faster, more reliable script creation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sec">
+        <div class="sec-title">Key Projects</div>
+
+        <div class="proj">
+          <div class="proj-head">
+            <span class="proj-name">BriqBotRunner</span>
+            <span class="proj-stack">Java · Reflection · Maven</span>
+          </div>
+          <div class="proj-desc">Centralized test-execution engine using <b>dynamic class/method dispatch</b> to replace JUnit across 1,200+ modules &mdash; a single entrypoint for running any bot on any platform.</div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-head">
+            <span class="proj-name">Briq WebDriver</span>
+            <span class="proj-stack">Java · WebSockets · TCP Tunneling</span>
+          </div>
+          <div class="proj-desc">Secure <b>remote execution &amp; live debugging</b> over WebSocket TCP tunnels &mdash; removed local tool installs and protected client source code; also powers FFmpeg video evidence capture.</div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-head">
+            <span class="proj-name">Jenkins Shared Library</span>
+            <span class="proj-stack">Groovy · Jenkins · CI/CD</span>
+          </div>
+          <div class="proj-desc">Reusable, versioned pipeline components (build, test, deploy) shared across <b>1,200+ jobs</b> &mdash; standardizing cross-platform Unix/Windows execution and cutting boilerplate.</div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-head">
+            <span class="proj-name">Trading Platform</span>
+            <span class="proj-stack">Java · Hibernate · Flask · gRPC · React · PostgreSQL · LLM</span>
+          </div>
+          <div class="proj-desc"><i>(personal)</i> End-to-end market-intelligence system I designed &amp; built solo: a multi-module <b>Java/Hibernate</b> engine scraping &amp; persisting institutional data to <b>PostgreSQL</b>; a <b>Flask</b> REST API with atomic, contract-driven endpoints; a <b>gRPC</b> Java&harr;Python bridge; <b>pandas</b> technical-indicator &amp; fundamentals scoring; an <b>agentic-AI research layer</b> (LLM) for stock analysis; and a React "Tactical Cockpit" dashboard plus a Chrome-extension broker overlay.</div>
+        </div>
+      </div>
+
+      <div class="sec">
+        <div class="sec-title">Selected Writing</div>
+        <div class="proj">
+          <div class="proj-desc"><b>Efficiently Transfer HTTP Traffic using WebSockets</b> &mdash; a deep dive into the TCP-tunneling approach behind Briq WebDriver. &nbsp;<span class="proj-stack">medium.com/@mayurengineer</span></div>
+        </div>
+        <div class="proj">
+          <div class="proj-desc"><b>How to Animate Dialogs in Flutter</b> &mdash; featured in the Flutter Community publication. &nbsp;<span class="proj-stack">medium.com/flutter-community</span></div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>
