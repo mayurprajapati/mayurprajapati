@@ -342,7 +342,6 @@
             <span class="chip key">Spring / Spring Boot</span>
             <span class="chip key">Hibernate / JPA</span>
             <span class="chip key">Flask</span>
-            <span class="chip">gRPC</span>
             <span class="chip">REST APIs</span>
             <span class="chip">WebSockets</span>
           </div>
@@ -463,6 +462,7 @@
             <li>Owned DevOps for <b>1,200+ Jenkins jobs</b>: maintained production pipelines, managed credentials, and validated changes on a <b>DR (disaster recovery)</b> instance before promoting to live.</li>
             <li>Built the <b>Groovy Shared Library</b> as the single entrypoint for all bots &mdash; run/monitor/stop lifecycle, smarter bot error recognition, Slack alerts, parameterized launches, and credential obfuscation.</li>
             <li>Designed custom <b>agentic-AI agents</b> (Gemini via <b>Vertex AI</b>) to process and query construction drawing PDFs; drove design &amp; merge-request reviews and team knowledge-sharing.</li>
+            <li>Added live video streaming to the automation framework via microservices &mdash; <b>FFmpeg</b> + <b>Amazon IVS</b> &mdash; for a fully autonomous capture-and-stream pipeline.</li>
             <li>Operated <b>Google Cloud</b> workloads: created and maintained <b>Compute Engine</b> (Windows) instances, used <b>Cloud Logging</b> for diagnostics, built OCR and image-prompting pipelines on <b>Vertex AI</b>, ran analytics in <b>BigQuery</b>, and deployed services on <b>Cloud Run</b>.</li>
           </ul>
         </div>
@@ -494,9 +494,9 @@
         <div class="proj">
           <div class="proj-head">
             <span class="proj-name">Briq WebDriver</span>
-            <span class="proj-stack">Java · WebSockets · TCP Tunneling</span>
+            <span class="proj-stack">Java · WebSockets · FFmpeg · Amazon IVS</span>
           </div>
-          <div class="proj-desc">Secure <b>remote execution &amp; live debugging</b> over WebSocket TCP tunnels &mdash; removed local tool installs and protected client source code; also powers FFmpeg video evidence capture.</div>
+          <div class="proj-desc">Secure <b>remote execution &amp; live debugging</b> over WebSocket TCP tunnels &mdash; removed local tool installs and protected client source code. Extended with a microservice-based <b>live video streaming</b> pipeline (<b>FFmpeg</b> + <b>Amazon IVS</b>) for fully autonomous session capture.</div>
         </div>
 
         <div class="proj">
@@ -510,9 +510,9 @@
         <div class="proj">
           <div class="proj-head">
             <span class="proj-name">Trading Platform (Personal)</span>
-            <span class="proj-stack">Java · Hibernate · Flask · gRPC · React · PostgreSQL · LLM</span>
+            <span class="proj-stack">Java · Hibernate · Flask · React · PostgreSQL · LLM</span>
           </div>
-          <div class="proj-desc"><i>(personal)</i> End-to-end market-intelligence system I designed &amp; built solo: a multi-module <b>Java/Hibernate</b> engine scraping &amp; persisting institutional data to <b>PostgreSQL</b>; a <b>Flask</b> REST API with atomic, contract-driven endpoints; a <b>gRPC</b> Java&harr;Python bridge; <b>pandas</b> technical-indicator &amp; fundamentals scoring; an <b>agentic-AI research layer</b> (LLM) for stock analysis; and a React "Tactical Cockpit" dashboard plus a Chrome-extension broker overlay.</div>
+          <div class="proj-desc"><i>(personal)</i> End-to-end market-intelligence system I designed &amp; built solo: a multi-module <b>Java/Hibernate</b> engine scraping &amp; persisting institutional data to <b>PostgreSQL</b>; a <b>Flask</b> REST API with atomic, contract-driven endpoints; pandas</b> technical-indicator &amp; fundamentals scoring; an <b>agentic-AI research layer</b> (LLM) for stock analysis; and a React "Tactical Cockpit" dashboard plus a Chrome-extension broker overlay.</div>
         </div>
       </div>
 
