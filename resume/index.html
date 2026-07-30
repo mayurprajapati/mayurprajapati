@@ -362,11 +362,23 @@
         </div>
 
         <div class="skill-group">
+          <div class="skill-label">Google Cloud</div>
+          <div class="chips">
+            <span class="chip key">Compute Engine</span>
+            <span class="chip key">Vertex AI</span>
+            <span class="chip key">BigQuery</span>
+            <span class="chip">Cloud Run</span>
+            <span class="chip">Cloud Logging</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
           <div class="skill-label">Data Stores</div>
           <div class="chips">
             <span class="chip">PostgreSQL</span>
             <span class="chip">MongoDB</span>
             <span class="chip">Firestore</span>
+            <span class="chip">BigQuery</span>
           </div>
         </div>
 
@@ -433,7 +445,7 @@
       <div class="sec">
         <div class="sec-title">Profile</div>
         <p class="summary">
-          <b>Software Engineer with 7+ years</b> building JVM platforms, internal developer tooling, and CI/CD systems that scale engineering throughput. Designed a <b>Java framework</b> powering 350+ production bots, a <b>Reflection-driven execution engine</b>, and <b>WebSocket-based</b> remote-execution tooling &mdash; and pioneered <b>agentic-AI/LLM</b> workflows that automate test-data generation and analysis. Comfortable across the stack &mdash; <b>Java, Spring/Hibernate, Python/Flask, Groovy, Jenkins</b> &mdash; with a track record of modernizing legacy systems and shipping measurable efficiency gains.
+          <b>Software Engineer with 7+ years</b> building JVM platforms, internal developer tooling, and CI/CD systems that scale engineering throughput. Designed a <b>Java framework</b> powering 350+ production bots, a <b>Reflection-driven execution engine</b>, and <b>WebSocket-based</b> remote-execution tooling &mdash; and pioneered <b>agentic-AI/LLM</b> workflows on <b>Vertex AI</b> to process and query construction drawing PDFs. Comfortable across the stack &mdash; <b>Java, Spring/Hibernate, Python/Flask, Groovy, Jenkins</b> &mdash; with a track record of modernizing legacy systems and shipping measurable efficiency gains.
         </p>
       </div>
 
@@ -448,8 +460,10 @@
           <ul class="bullets">
             <li>Architected a <b>Java (Maven) automation &amp; execution platform</b> powering <b>350+ production bots</b> across web, desktop, API, and OCR surfaces &mdash; standardizing config, execution, and reporting.</li>
             <li>Led a <b>zero-downtime migration of 1,200+ modules off JUnit</b> onto an in-house Reflection-based runner, cutting compile overhead and dramatically simplifying maintenance.</li>
-            <li>Owned CI/CD at scale: <b>1,200+ Jenkins jobs</b> orchestrated via a custom <b>Groovy Shared Library</b> for cross-platform (Unix/Windows) pipelines on GitLab CI/CD.</li>
-            <li>Designed custom <b>agentic-AI test agents</b> (GPT/Gemini-driven) embedded into automation workflows to auto-generate machine-readable test data, expanding data-driven coverage; drove design &amp; merge-request reviews and team knowledge-sharing.</li>
+            <li>Owned DevOps for <b>1,200+ Jenkins jobs</b>: maintained production pipelines, managed credentials, and validated changes on a <b>DR (disaster recovery)</b> instance before promoting to live.</li>
+            <li>Built the <b>Groovy Shared Library</b> as the single entrypoint for all bots &mdash; run/monitor/stop lifecycle, smarter bot error recognition, Slack alerts, parameterized launches, and credential obfuscation.</li>
+            <li>Designed custom <b>agentic-AI agents</b> (Gemini via <b>Vertex AI</b>) to process and query construction drawing PDFs; drove design &amp; merge-request reviews and team knowledge-sharing.</li>
+            <li>Operated <b>Google Cloud</b> workloads: created and maintained <b>Compute Engine</b> (Windows) instances, used <b>Cloud Logging</b> for diagnostics, built OCR and image-prompting pipelines on <b>Vertex AI</b>, ran analytics in <b>BigQuery</b>, and deployed services on <b>Cloud Run</b>.</li>
           </ul>
         </div>
 
@@ -488,14 +502,14 @@
         <div class="proj">
           <div class="proj-head">
             <span class="proj-name">Jenkins Shared Library</span>
-            <span class="proj-stack">Groovy · Jenkins · CI/CD</span>
+            <span class="proj-stack">Groovy · Jenkins · CI/CD · Slack</span>
           </div>
-          <div class="proj-desc">Reusable, versioned pipeline components (build, test, deploy) shared across <b>1,200+ jobs</b> &mdash; standardizing cross-platform Unix/Windows execution and cutting boilerplate.</div>
+          <div class="proj-desc">Central bot entrypoint for <b>1,200+ jobs</b>: run / monitor / stop lifecycle, improved bot error recognition, Slack notifications, parameter passing, and credential obfuscation &mdash; with credentials managed and changes tested on a <b>DR instance</b> before production rollout.</div>
         </div>
 
         <div class="proj">
           <div class="proj-head">
-            <span class="proj-name">Trading Platform</span>
+            <span class="proj-name">Trading Platform (Personal)</span>
             <span class="proj-stack">Java · Hibernate · Flask · gRPC · React · PostgreSQL · LLM</span>
           </div>
           <div class="proj-desc"><i>(personal)</i> End-to-end market-intelligence system I designed &amp; built solo: a multi-module <b>Java/Hibernate</b> engine scraping &amp; persisting institutional data to <b>PostgreSQL</b>; a <b>Flask</b> REST API with atomic, contract-driven endpoints; a <b>gRPC</b> Java&harr;Python bridge; <b>pandas</b> technical-indicator &amp; fundamentals scoring; an <b>agentic-AI research layer</b> (LLM) for stock analysis; and a React "Tactical Cockpit" dashboard plus a Chrome-extension broker overlay.</div>
