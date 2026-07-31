@@ -1,0 +1,11 @@
+public/
+resources/
+node_modules/
+.hugo_build.lock
+hugo_stats.json
+*.log
+.env
+.env.*
+config.local.toml
+.DS_Store
+Thumbs.db

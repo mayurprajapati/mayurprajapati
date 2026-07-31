@@ -1,0 +1,109 @@
+# Mayur Prajapati — personal site (CareerCanvas)
+# https://themes.gohugo.io/themes/careercanvas/
+
+baseURL = "https://mayurprajapati.in/"
+locale = "en-US"
+title = "Mayur Prajapati"
+theme = "careercanvas"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    contentDir = "content/en"
+    label = "English"
+    weight = 1
+    [languages.en.params]
+      tagline = "Software Engineer · Java · Backend · Agentic AI & Platform Tooling"
+      hero_description = "Software Engineer with 7+ years building JVM platforms, internal developer tooling, and CI/CD systems that scale engineering throughput — plus agentic-AI workflows on Vertex AI."
+      hero_location = "India"
+      resume_url = "/files/Mayur_Prajapati_Resume.pdf"
+      collab_tags = [
+        "Java / Spring / Hibernate",
+        "CI/CD & Jenkins Shared Libraries",
+        "Agentic AI / Vertex AI",
+        "Platform & developer tooling",
+        "Python / Flask APIs"
+      ]
+
+[build]
+  writeStats = true
+
+[params]
+  name = "Mayur Prajapati"
+  firstName = "Mayur"
+  lastName = "Prajapati"
+  email = "mayurprajapati1042@gmail.com"
+  profile_image = "/images/profile.jpg"
+  author = "Mayur Prajapati"
+  og_image = "images/profile.jpg"
+  description = "Software Engineer — Java, backend platforms, CI/CD, and agentic AI tooling."
+
+  linkedin_url = "https://linkedin.com/in/mayurengineer"
+  linkedin_text = "linkedin.com/in/mayurengineer"
+  github_url = "https://github.com/mayurprajapati"
+  github_text = "github.com/mayurprajapati"
+
+  calendly_url = ""
+  calendly_height = "700px"
+  copyright = "© 2026 | Mayur Prajapati"
+  resume_url_en = "/files/Mayur_Prajapati_Resume.pdf"
+  resume_label = "View CV"
+  sectionPagesMenu = "main"
+  formspreeendpoint = ""
+  pexelsapikey = ""
+
+  [[params.social]]
+    icon = "linkedin-in"
+    url = "https://linkedin.com/in/mayurengineer"
+  [[params.social]]
+    icon = "github"
+    url = "https://github.com/mayurprajapati"
+  [[params.social]]
+    icon = "medium"
+    url = "https://medium.com/@mayurengineer"
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+
+[server]
+  [[server.headers]]
+    for = "/**/*.css"
+    [server.headers.values]
+      Content-Type = "text/css"
+
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$']
+
+[params.color_palettes]
+  [[params.color_palettes.palette]]
+    name = "ocean"
+    main_color = "#1E40AF"
+    second_color = "#06B6D4"
+    third_color = "#10B981"
+  [[params.color_palettes.palette]]
+    name = "steel"
+    main_color = "#374151"
+    second_color = "#6B7280"
+    third_color = "#10B981"
+  [[params.color_palettes.palette]]
+    name = "slate"
+    main_color = "#475569"
+    second_color = "#0EA5E9"
+    third_color = "#F97316"
+  [[params.color_palettes.palette]]
+    name = "navy"
+    main_color = "#1E3A8A"
+    second_color = "#3B82F6"
+    third_color = "#F59E0B"
+
+[params.pexels]
+  queries = ["software engineering", "data center", "city skyline", "sky and clouds"]

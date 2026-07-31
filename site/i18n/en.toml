@@ -1,0 +1,92 @@
+[read_more]
+other = "Read more"
+
+[by]
+other = "by"
+
+[posted_on]
+other = "Posted on"
+
+[tags]
+other = "Tags"
+
+[contact]
+other = "Contact"
+
+[contactFormLabel]
+other = "Let's Connect"
+
+[contactFormLabelNameLabel]
+other = "Name"
+
+[contactFormLabelEmailLabel]
+other = "Email"
+
+[contactFormLabelSubjectLabel]
+other = "Subject"
+
+[contactFormLabelMessageLabel]
+other = "Message"
+
+[contactFormSendBtnLabel]
+other = "Send"
+
+[send]
+other = "Send"
+
+[skills]
+other = "Skills"
+
+[experience]
+other = "Experience"
+
+[about]
+other = "About"
+
+[blog]
+other = "Blog"
+
+[technical]
+other = "Tech Stack"
+
+[getInTouch]
+other = "Get in Touch"
+
+[learnMore]
+other = "Learn more"
+
+[sendMeAMessage]
+other = "Send me a message"
+
+[contactInformation]
+other = "Contact Information"
+
+[aboutMe]
+other = "About Me"
+
+[connectOnLinkedIn]
+other = "Connect on LinkedIn"
+
+[quickFacts]
+other = "Quick Facts"
+
+[helloIm]
+other = "Hello, I'm"
+
+[viewCV]
+other = "View CV"
+
+[downloadResume]
+other = "Download Resume"
+
+[keyAchievements]
+other = "Key Achievements"
+
+[pageNotFound]
+other = "Page Not Found"
+
+[pageNotFoundSubtitle]
+other = "The page you are looking for does not exist."
+
+[goHome]
+other = "Go home"

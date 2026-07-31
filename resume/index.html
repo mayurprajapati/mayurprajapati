@@ -264,6 +264,8 @@
   }
   .proj-desc { font-size: 9.8px; color: var(--ink-soft); line-height: 1.45; margin-top: 2px; }
   .proj-desc b { color: var(--ink); font-weight: 700; }
+  .proj-desc a { color: var(--ink); text-decoration: none; }
+  .proj-desc a:hover { color: var(--accent-deep); text-decoration: underline; }
 
   /* ============ PRINT ============ */
   @page { size: A4; margin: 0; }
@@ -464,6 +466,7 @@
             <li>Designed custom <b>agentic-AI agents</b> (Gemini via <b>Vertex AI</b>) to process and query construction drawing PDFs; drove design &amp; merge-request reviews and team knowledge-sharing.</li>
             <li>Added live video streaming to the automation framework via microservices &mdash; <b>FFmpeg</b> + <b>Amazon IVS</b> &mdash; for a fully autonomous capture-and-stream pipeline.</li>
             <li>Operated <b>Google Cloud</b> workloads: created and maintained <b>Compute Engine</b> (Windows) instances, used <b>Cloud Logging</b> for diagnostics, built OCR and image-prompting pipelines on <b>Vertex AI</b>, ran analytics in <b>BigQuery</b>, and deployed services on <b>Cloud Run</b>.</li>
+            <li>Extended the Jenkins <b>Google Compute Engine</b> plugin for ephemeral Windows agents: optional viewport setup from our request VM, and <b>JNLP</b> connect (vs SSH) so desktop automation gets an interactive session.</li>
           </ul>
         </div>
 
@@ -519,10 +522,13 @@
       <div class="sec">
         <div class="sec-title">Selected Writing</div>
         <div class="proj">
-          <div class="proj-desc"><b>Efficiently Transfer HTTP Traffic using WebSockets</b> &mdash; a deep dive into the TCP-tunneling approach behind Briq WebDriver. &nbsp;<span class="proj-stack">medium.com/@mayurengineer</span></div>
+          <div class="proj-desc"><a href="https://medium.com/@mayurengineer/efficiently-transfer-http-traffic-using-websockets-a-step-by-step-guide-3f2991b591f7" target="_blank" rel="noopener noreferrer"><b>Efficiently Transfer HTTP Traffic using WebSockets</b></a> &mdash; a deep dive into the TCP-tunneling approach behind Briq WebDriver. &nbsp;<span class="proj-stack">medium.com/@mayurengineer</span></div>
         </div>
         <div class="proj">
-          <div class="proj-desc"><b>How to Animate Dialogs in Flutter</b> &mdash; featured in the Flutter Community publication. &nbsp;<span class="proj-stack">medium.com/flutter-community</span></div>
+          <div class="proj-desc"><a href="https://medium.com/@mayurengineer/automating-java-code-generation-git-and-gitlab-merge-requests-using-java-1e11f1a4bf45" target="_blank" rel="noopener noreferrer"><b>Automating Java Code Generation, Git, and GitLab Merge Requests using Java</b></a> &mdash; generating code and opening MRs programmatically with Java. &nbsp;<span class="proj-stack">medium.com/@mayurengineer</span></div>
+        </div>
+        <div class="proj">
+          <div class="proj-desc"><a href="https://medium.com/flutter-community/how-to-animate-dialogs-in-flutter-here-is-answer-492ea3a7262f" target="_blank" rel="noopener noreferrer"><b>How to Animate Dialogs in Flutter</b></a> &mdash; featured in the Flutter Community publication. &nbsp;<span class="proj-stack">medium.com/flutter-community</span></div>
         </div>
       </div>
 

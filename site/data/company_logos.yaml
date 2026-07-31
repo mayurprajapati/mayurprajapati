@@ -1,0 +1,7 @@
+# Optional company logo overrides for the experience timeline.
+# Place images under static/images/companies/<key>/ or set src here.
+#
+# briq:
+#   src: /images/companies/briq/logo.png
+# oracle:
+#   src: /images/companies/oracle/logo.png
