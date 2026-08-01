@@ -35,15 +35,5 @@ domains:
     description: "System design, code review, mentoring, Agile/Scrum, and measurable productivity wins (e.g. 30% boost from internal search tooling)."
     devicon_class: "devicon-github-original colored"
 
-technical:
-  - "Java"
-  - "Spring Boot"
-  - "Hibernate / JPA"
-  - "Python / Flask"
-  - "Jenkins Shared Libraries"
-  - "Vertex AI / Gemini"
-  - "PostgreSQL"
-  - "WebSockets"
-  - "Google Cloud"
-  - "React"
+
 ---

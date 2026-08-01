@@ -128,6 +128,7 @@ technical_groups:
         devicon_name: "selenium"
       - icon: "playwright"
         name: "Playwright"
-      - icon: "ffmpeg"
+        devicon_name: "playwright"
+      - icon: "video"
         name: "FFmpeg"
 ---

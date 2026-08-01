@@ -9,6 +9,26 @@
     {{ partial "head.html" . }}
     {{ partial "color-variables.html" . }}
 
+    {{/* The theme's "dark:text-primary-light" / "dark:from-primary-dark" etc. classes on the
+         skill-tag pills never compile (Tailwind can't generate dark: variants for these
+         hand-authored, non-theme-config color utilities), so in dark mode the pills kept the
+         light-mode pale/white-mixed gradient — a bright chip stranded on a dark page. Overriding
+         --color-primary-lighter globally would also silently break the About-modal "What I focus
+         on" callout (which relies on it staying pale for readable dark text), so fix the pills
+         specifically via their existing data-animation="skill-tag" hook instead. */}}
+    <style>
+      .dark [data-animation="skill-tag"] {
+        background: linear-gradient(135deg,
+          color-mix(in srgb, var(--color-primary) 30%, black),
+          color-mix(in srgb, var(--color-primary) 55%, black)) !important;
+        color: var(--color-gray-50) !important;
+        border-color: color-mix(in srgb, var(--color-primary-light) 45%, transparent) !important;
+      }
+      .dark [data-animation="skill-tag"] i {
+        color: var(--color-primary-light) !important;
+      }
+    </style>
+
     {{/* Prebuilt Tailwind CSS (avoids Hugo→PostCSS permission issues on some hosts) */}}
     {{ $styles := resources.Get "css/main.css" }}
     {{ if eq hugo.Environment "production" }}
