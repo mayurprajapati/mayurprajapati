@@ -51,7 +51,7 @@ defaultContentLanguageInSubdir = false
   resume_label = "View CV"
   sectionPagesMenu = "main"
   formspreeendpoint = ""
-  pexelsapikey = ""
+  pexelsapikey = "QONO7trG4NAXGP9JrZ8EASfhYbfR9YPNcLlrFVAOpOQeJZihX6IK4WuM"
 
   [[params.social]]
     icon = "linkedin-in"
