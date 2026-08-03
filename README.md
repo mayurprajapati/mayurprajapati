@@ -6,7 +6,7 @@
   experience_years: 7+
   current_company: Briq Data Analytics Pvt. Ltd.
   location: Gujarat, India
-  email: hi@mayurprajapati.in
+  email: mail@mayurprajapati.in
   languages: Java, Python, Groovy, SQL, JavaScript, Bash
   backend: Spring / Spring Boot, Hibernate / JPA, Flask, gRPC, REST, WebSockets
   devops: Jenkins, Groovy Shared Libraries, GitLab CI/CD, Maven, Gradle, Git, Nginx
@@ -24,7 +24,7 @@
 [LinkedIn](https://www.linkedin.com/in/mayurengineer) ·
 [Medium](https://medium.com/@mayurengineer) ·
 [GitHub](https://github.com/mayurprajapati) ·
-[Email](mailto:hi@mayurprajapati.in)
+[Email](mailto:mail@mayurprajapati.in)
 
 ---
 
