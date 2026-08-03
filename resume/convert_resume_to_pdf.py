@@ -70,6 +70,6 @@ if __name__ == "__main__":
     asyncio.run(
         convert_html_to_dynamic_single_page_pdf(
             html_file_path="resume/index.html",
-            output_pdf_path="resume/Mayur_Prajapati_Resume.pdf",
+            output_pdf_path="site/static/files/Mayur_Prajapati_Resume.pdf",
         )
     )
