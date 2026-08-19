@@ -40,6 +40,15 @@ other = "Skills"
 [experience]
 other = "Experience"
 
+[projects]
+other = "Projects"
+
+[flagshipProject]
+other = "Flagship Project"
+
+[readDeepDive]
+other = "Read the deep dive"
+
 [about]
 other = "About"
 

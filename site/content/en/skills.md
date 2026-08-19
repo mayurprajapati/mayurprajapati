@@ -1,6 +1,7 @@
 ---
 title: "Skills"
 type: "homepage"
+description: "Core engineering skills: JVM platforms, Jenkins CI/CD at scale, agentic AI on Vertex AI/Gemini, Flask/PostgreSQL APIs, and full-stack delivery with React."
 intro: >-
   Backend platforms, CI/CD at scale, and agentic AI — with enough full-stack range to ship APIs, dashboards, and browser tooling when needed.
 

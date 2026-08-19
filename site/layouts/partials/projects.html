@@ -1,0 +1,68 @@
+<!-- Projects Section -->
+<section id="projects" class="py-12 bg-bg dark:bg-bg projects-section border-t border-border-primary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {{ with .Site.GetPage "projects" }}
+    <h2 class="text-3xl font-bold text-center mb-4 font-heading text-text-primary dark:text-text-primary">{{ .Title }}</h2>
+    <p class="text-lg text-center mb-12 text-text-secondary dark:text-text-tertiary italic">{{ .Params.intro }}</p>
+
+    {{ $blog := .Site.GetPage "blog" }}
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      {{ range $i, $proj := .Params.projects }}
+      {{ $post := "" }}
+      {{ with $proj.blog_post }}{{ $post = $blog.GetPage . }}{{ end }}
+      <div class="bg-gradient-to-br from-bg-secondary to-bg-tertiary dark:from-bg-secondary dark:to-bg-tertiary rounded-xl shadow-lg border border-border-primary dark:border-border-primary card-hover flex flex-col {{ if $proj.flagship }}lg:col-span-2 border-2 border-primary-light{{ end }}"
+        data-animate>
+        <div class="p-6 flex flex-col h-full">
+          <div class="flex items-start justify-between mb-3 flex-wrap gap-2">
+            <div class="flex items-center">
+              <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-primary text-white text-xl mr-4 flex-shrink-0">
+                <i class="fas fa-{{ $proj.icon }}" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-heading font-bold text-text-primary dark:text-text-primary">{{ $proj.title }}</h3>
+                <p class="text-sm text-text-secondary dark:text-text-tertiary">{{ $proj.tagline }}</p>
+              </div>
+            </div>
+            {{ if $proj.flagship }}
+            <span class="inline-flex items-center bg-third-darker text-white px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap">
+              <i class="fas fa-star mr-1"></i>{{ i18n "flagshipProject" }}
+            </span>
+            {{ end }}
+          </div>
+
+          <p class="text-text-secondary dark:text-text-secondary leading-relaxed mb-4">{{ $proj.description }}</p>
+
+          {{ with $proj.tech }}
+          <div class="flex flex-wrap gap-2 mb-4">
+            {{ range . }}
+            <span class="bg-gradient-primary-lighter text-text-primary dark:text-primary-dark px-3 py-1 rounded-full text-xs font-medium border border-primary-light">
+              {{ . }}
+            </span>
+            {{ end }}
+          </div>
+          {{ end }}
+
+          {{ with $proj.highlights }}
+          <ul class="space-y-2 text-text-secondary dark:text-text-secondary mb-4 flex-grow">
+            {{ range . }}
+            <li class="flex items-start text-sm">
+              <i class="fas fa-check-circle text-second mr-2 mt-1 flex-shrink-0"></i>
+              <span>{{ . }}</span>
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+
+          {{ if $post }}
+          <a href="{{ $post.RelPermalink }}" class="mt-auto inline-flex items-center text-primary dark:text-primary-light font-semibold group">
+            {{ i18n "readDeepDive" }}
+            <i class="fas fa-arrow-right ml-2 text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
+          </a>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>

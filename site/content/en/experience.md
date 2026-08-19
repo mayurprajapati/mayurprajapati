@@ -1,6 +1,7 @@
 ---
 title: "Experience"
 type: "homepage"
+description: "Mayur Prajapati's work history — Senior Software Engineer at Briq Data Analytics (350+ production bots, 1,200+ Jenkins jobs) and QA/Tooling Engineer at Oracle."
 intro: >-
   Building automation platforms, CI/CD systems, and AI-assisted tooling that scale engineering throughput.
 

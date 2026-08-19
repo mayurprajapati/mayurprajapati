@@ -7,6 +7,13 @@
         }
     </script>
     {{ partial "head.html" . }}
+    {{ partial "schema-org.html" . }}
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    {{ with .OutputFormats.Get "rss" }}
+    <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}" />
+    {{ end }}
     {{ partial "color-variables.html" . }}
 
     {{/* The theme's "dark:text-primary-light" / "dark:from-primary-dark" etc. classes on the

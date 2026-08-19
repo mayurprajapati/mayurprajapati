@@ -1,6 +1,7 @@
 ---
 title: "About"
 type: "homepage"
+description: "Mayur Prajapati — Senior Software Engineer with 7+ years building JVM platforms, CI/CD systems, and agentic-AI tooling. Based in Gujarat, India."
 featured_image: "/images/profile.jpg"
 intro: >-
   **Software Engineer with 7+ years** building JVM platforms, internal developer tooling, and CI/CD systems that scale engineering throughput. Designed a **Java framework** powering **350+ production bots**, a **Reflection-driven execution engine**, and **WebSocket-based** remote-execution tooling — and pioneered **agentic-AI / LLM** workflows on **Vertex AI** to process and query construction drawing PDFs.

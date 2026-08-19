@@ -1,6 +1,7 @@
 ---
 title: "Tech Stack"
 type: "homepage"
+description: "Full technical stack: Java, Python, Groovy; Spring/Hibernate/Flask; Jenkins/GitLab CI/CD; Google Cloud (Vertex AI, BigQuery, Cloud Run); PostgreSQL/MongoDB/Redis; React."
 intro: >-
   Languages, frameworks, cloud, and tooling I use to ship platforms, APIs, and agentic workflows.
 
