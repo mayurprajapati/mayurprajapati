@@ -52,7 +52,7 @@ Software Engineer with **7+ years** building JVM platforms, internal developer t
 - Designed **agentic-AI test agents** (GPT / Gemini) to auto-generate machine-readable test data; drove design reviews, merge-request reviews, and team knowledge-sharing.
 - Recognized as [Spotlight of the Month](https://www.briq.com/blog/spotlight-mayur); VP recognition for scaling automation and deployment efficiency.
 
-### Software Engineer — QA & Tooling — Oracle
+### Associate Software Engineer — Full Stack — Oracle
 *Jul 2019 – Apr 2021*
 
 - Built the **HCM Data Search Utility** end-to-end, delivering a **30% productivity boost** for the automation team.

@@ -1,7 +1,7 @@
 ---
 title: "Experience"
 type: "homepage"
-description: "Mayur Prajapati's work history — Senior Software Engineer at Briq Data Analytics (350+ production bots, 1,200+ Jenkins jobs) and QA/Tooling Engineer at Oracle."
+description: "Mayur Prajapati's work history — Senior Software Engineer at Briq Data Analytics (350+ production bots, 1,200+ Jenkins jobs) and Associate Software Engineer — Full Stack at Oracle."
 intro: >-
   Building automation platforms, CI/CD systems, and AI-assisted tooling that scale engineering throughput.
 
@@ -27,11 +27,11 @@ positions:
 
   - company: "Oracle"
     company_key: "oracle"
-    role: "Software Engineer — QA & Tooling"
+    role: "Associate Software Engineer — Full Stack"
     period: "Jul 2019 – Apr 2021"
     industry: "Enterprise Software"
     location: "India"
-    company_description: "HCM automation tooling and quality engineering for Oracle Cloud HCM."
+    company_description: "Oracle Cloud HCM — full-stack internal tools and Java services for the HCM engineering org."
     bullet_points:
       - "Built the HCM Data Search Utility end-to-end — ~30% productivity boost for the automation team."
       - "Revamped the HCM Report Generator: faster load times and new reporting features."
