@@ -14,16 +14,16 @@ defaultContentLanguageInSubdir = false
     label = "English"
     weight = 1
     [languages.en.params]
-      tagline = "Senior Software Engineer at Briq. Software Engineer · Java · Python · Backend · Agentic AI & Platform Tooling"
-      hero_description = "Software Engineer at Briq with 7+ years building JVM platforms, internal developer tooling, Custom Solutions, and CI/CD systems that scale engineering throughput — plus agentic-AI workflows on Vertex AI."
+      tagline = "Senior Automation Engineer & SDET at Briq. Test Automation · Selenium / Playwright / Appium · CI/CD at scale · AI-Augmented Testing"
+      hero_description = "Automation Engineer & SDET at Briq with 7+ years designing test automation frameworks across Web, Desktop, API, PDF and OCR — 350+ production bots, 1,200+ scripts migrated off JUnit, and test execution scaled across 1,200+ Jenkins jobs."
       hero_location = "India"
       resume_url = "/files/Mayur_Prajapati_Resume.pdf"
       collab_tags = [
-        "Java / Spring / Hibernate",
-        "CI/CD & Jenkins Shared Libraries",
-        "Agentic AI / Vertex AI",
-        "Platform & developer tooling",
-        "Python / Flask APIs"
+        "Test automation frameworks",
+        "Selenium / Playwright / Appium",
+        "API testing with RestAssured",
+        "CI/CD & Jenkins at scale",
+        "AI-augmented testing"
       ]
 
 [build]
@@ -37,7 +37,7 @@ defaultContentLanguageInSubdir = false
   profile_image = "/images/profile.jpg"
   author = "Mayur Prajapati"
   og_image = "images/profile.jpg"
-  description = "Software Engineer — Java, backend platforms, CI/CD, and agentic AI tooling."
+  description = "Automation Engineer & SDET — test automation frameworks, Selenium/Playwright/Appium, API testing, CI/CD at scale, and AI-augmented testing."
 
   linkedin_url = "https://linkedin.com/in/mayurengineer"
   linkedin_text = "linkedin.com/in/mayurengineer"
