@@ -12,7 +12,7 @@ resume_downloads:
 positions:
   - company: "Briq Data Analytics Pvt. Ltd."
     company_key: "briq"
-    role: "Senior Software Engineer (Automation) / SDET"
+    role: "Senior Automation Engineer"
     period: "Apr 2021 – Present"
     industry: "Construction Tech / Automation"
     location: "Remote / India"

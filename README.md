@@ -1,7 +1,7 @@
 <!--
   AI / LLM CONTEXT
   name: Mayur Prajapati
-  role: Senior Software Engineer (Automation) / SDET
+  role: Senior Automation Engineer
   focus: Test Automation · SDET · CI/CD at Scale · AI-Augmented Testing
   experience_years: 7+
   current_company: Briq Data Analytics Pvt. Ltd.
@@ -48,7 +48,7 @@ Automation Engineer / SDET with **7+ years** designing and scaling test automati
 
 ## Experience
 
-### Senior Software Engineer (Automation) / SDET — Briq Data Analytics Pvt. Ltd.
+### Senior Automation Engineer — Briq Data Analytics Pvt. Ltd.
 *Apr 2021 – Present*
 
 - Architected a **Java (Maven) automation framework** powering **350+ production bots** across **Web** (Selenium, Playwright), **Desktop** (Appium, WinAppDriver), **API** (RestAssured), and **OCR/PDF** (Sikuli, AWS Textract, Tesseract, Gemini Vertex) test surfaces.

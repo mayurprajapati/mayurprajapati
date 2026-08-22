@@ -14,7 +14,7 @@ passion_text: >-
   I build the automation that makes testing fast and trustworthy: reusable frameworks, Jenkins shared libraries, remote execution and debugging tooling, video test evidence, and AI-augmented test-data generation. I care about flake-free suites, zero-downtime migrations, and test infrastructure that survives production.
 
 mix: >-
-  Day job: Senior Software Engineer (Automation) / SDET at **Briq**, owning the automation framework and CI/CD test infrastructure for **1,200+ Jenkins jobs**. Side projects: a full trading / market-intelligence stack (Java ingestion, Flask API, React cockpit) and writing on Medium about WebSockets, code generation, and systems.
+  Day job: Senior Automation Engineer at **Briq**, owning the automation framework and CI/CD test infrastructure for **1,200+ Jenkins jobs**. Side projects: a full trading / market-intelligence stack (Java ingestion, Flask API, React cockpit) and writing on Medium about WebSockets, code generation, and systems.
 
 personal: >-
   Outside work I write technical articles, tinker with personal infrastructure (home lab, Hugo sites, Cloudflare tunnels), and keep learning agentic-AI testing tools.
@@ -22,7 +22,7 @@ personal: >-
 quickfacts:
   - icon: "briefcase"
     title: "Current Role"
-    value: "Senior Software Engineer (Automation) / SDET at Briq Data Analytics"
+    value: "Senior Automation Engineer at Briq Data Analytics"
   - icon: "graduation-cap"
     title: "Education"
     value: "B.C.A — Computer Application · Gujarat · 2019"
