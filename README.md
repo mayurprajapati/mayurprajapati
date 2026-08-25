@@ -26,7 +26,7 @@
 
 [Resume (PDF)](./site/static/files/Mayur_Prajapati_Resume.pdf) ·
 [LinkedIn](https://www.linkedin.com/in/mayurengineer) ·
-[Medium](https://medium.com/@mayurengineer) ·
+[Medium](https://medium.com/@mayurprajapatiin) ·
 [GitHub](https://github.com/mayurprajapati) ·
 [Email](mailto:mail@mayurprajapati.in)
 
@@ -102,7 +102,7 @@ End-to-end market-intelligence system: Java/Hibernate scraping engine, Flask RES
 
 ## Writing
 
-- [Efficiently Transfer HTTP Traffic using WebSockets](https://medium.com/@mayurengineer/efficiently-transfer-http-traffic-using-websockets-a-step-by-step-guide-3f2991b591f7) (2023) — TCP tunneling behind Briq WebDriver
+- [Efficiently Transfer HTTP Traffic using WebSockets](https://medium.com/@mayurprajapatiin/efficiently-transfer-http-traffic-using-websockets-a-step-by-step-guide-3f2991b591f7) (2023) — TCP tunneling behind Briq WebDriver
 - [How to Animate Dialogs in Flutter](https://medium.com/flutter-community/how-to-animate-dialogs-in-flutter-here-is-answer-492ea3a7262f) (2019) — Flutter Community
 
 ---
@@ -110,3 +110,17 @@ End-to-end market-intelligence system: Java/Hibernate scraping engine, Flask RES
 ## Education
 
 **B.C.A — Computer Application** · Gujarat · 2019
+
+---
+
+## Regenerating the Résumé PDF
+
+`site/static/files/Mayur_Prajapati_Resume.pdf` (the file linked above and served by the live site) is rendered directly from [`resume/index.html`](./resume/index.html) via Playwright, sized to the rendered content's exact dimensions as a single-page PDF. After editing `resume/index.html`, regenerate it from the repo root:
+
+```bash
+pip install playwright
+playwright install chromium   # one-time browser install
+python resume/convert_resume_to_pdf.py
+```
+
+The script is [`resume/convert_resume_to_pdf.py`](./resume/convert_resume_to_pdf.py) — it always reads `resume/index.html` and writes `site/static/files/Mayur_Prajapati_Resume.pdf`.

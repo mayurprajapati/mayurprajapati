@@ -6,7 +6,7 @@ description: "Columnar compression on a 152-million-row OHLC candle table took a
 tags: ["postgresql", "timescaledb", "sql", "performance"]
 featured_image: "/images/blog/timescaledb-compression.jpg"
 og_image: "/images/blog/timescaledb-compression.jpg"
-external_url: "https://medium.com/@mayurengineer/how-timescaledb-compression-cut-a-152m-row-query-from-27s-to-0-8s-e1b25242f0da"
+external_url: "https://medium.com/@mayurprajapatiin/how-timescaledb-compression-cut-a-152m-row-query-from-27s-to-0-8s-e1b25242f0da"
 external_source: "Medium"
 ---
 
@@ -22,4 +22,4 @@ The full post covers how the hypertable was chunked, how `segmentby` and `orderb
 chosen for the access pattern, and what the before/after `EXPLAIN ANALYZE` plans actually
 show.
 
-[**Read the full post on Medium →**](https://medium.com/@mayurengineer/how-timescaledb-compression-cut-a-152m-row-query-from-27s-to-0-8s-e1b25242f0da)
+[**Read the full post on Medium →**](https://medium.com/@mayurprajapatiin/how-timescaledb-compression-cut-a-152m-row-query-from-27s-to-0-8s-e1b25242f0da)
