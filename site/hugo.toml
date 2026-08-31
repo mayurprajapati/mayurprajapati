@@ -14,16 +14,16 @@ defaultContentLanguageInSubdir = false
     label = "English"
     weight = 1
     [languages.en.params]
-      tagline = "Senior Automation Engineer & SDET at Briq. Test Automation · Selenium / Playwright / Appium · CI/CD at scale · AI-Augmented Testing"
-      hero_description = "Automation Engineer & SDET at Briq with 7+ years designing test automation frameworks across Web, Desktop, API, PDF and OCR — 350+ production bots, 1,200+ scripts migrated off JUnit, and test execution scaled across 1,200+ Jenkins jobs."
+      tagline = "Software Engineer — Automation & Platforms at Briq. Selenium / Playwright / Appium · CI/CD at scale · AI-Augmented Automation"
+      hero_description = "Software Engineer — Automation & Platforms at Briq with 7+ years building automation frameworks across Web, Desktop, API, PDF and OCR — 350+ production bots, 1,200+ scripts migrated off JUnit, and execution scaled across 1,200+ Jenkins jobs."
       hero_location = "India"
       resume_url = "/files/Mayur_Prajapati_Resume.pdf"
       collab_tags = [
-        "Test automation frameworks",
+        "Automation frameworks",
         "Selenium / Playwright / Appium",
-        "API testing with RestAssured",
+        "API automation with RestAssured",
         "CI/CD & Jenkins at scale",
-        "AI-augmented testing"
+        "AI-augmented automation"
       ]
 
 [build]
@@ -37,7 +37,7 @@ defaultContentLanguageInSubdir = false
   profile_image = "/images/profile.jpg"
   author = "Mayur Prajapati"
   og_image = "images/profile.jpg"
-  description = "Automation Engineer & SDET — test automation frameworks, Selenium/Playwright/Appium, API testing, CI/CD at scale, and AI-augmented testing."
+  description = "Software Engineer — Automation & Platforms: automation frameworks, Selenium/Playwright/Appium, API automation, CI/CD at scale, and AI-augmented automation."
 
   linkedin_url = "https://linkedin.com/in/mayurengineer"
   linkedin_text = "linkedin.com/in/mayurengineer"

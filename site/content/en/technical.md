@@ -1,12 +1,12 @@
 ---
 title: "Tech Stack"
 type: "homepage"
-description: "Full automation & QA stack: Selenium, Playwright, Appium, WinAppDriver, Oracle OATS/KWiK, RestAssured; Jenkins/GitLab CI/CD; Java, Python, Groovy; OCR with Sikuli/Textract; Vertex AI."
+description: "Full automation & platform stack: Selenium, Playwright, Appium, WinAppDriver, Oracle OATS/KWiK, RestAssured; Jenkins/GitLab CI/CD; Java, Python, Groovy; OCR with Sikuli/Textract; Vertex AI."
 intro: >-
-  The tools I use to build test automation frameworks, run them at scale in CI/CD, and validate surfaces that have no DOM or API.
+  The tools I use to build automation frameworks, run them at scale in CI/CD, and validate surfaces that have no DOM or API.
 
 technical_groups:
-  - title: "Automation & QA"
+  - title: "Automation Frameworks"
     icon: "vial"
     color_scheme: "green"
     skills:
@@ -25,7 +25,7 @@ technical_groups:
       - icon: "bug"
         name: "ALM Defect Triage"
 
-  - title: "API & Data Testing"
+  - title: "API & Data Validation"
     icon: "network-wired"
     color_scheme: "green"
     skills:
@@ -42,7 +42,7 @@ technical_groups:
       - icon: "plug"
         name: "WebSockets"
 
-  - title: "CI/CD & Test Infrastructure"
+  - title: "CI/CD & Infrastructure"
     icon: "cogs"
     color_scheme: "blue"
     skills:
@@ -85,7 +85,7 @@ technical_groups:
       - icon: "terminal"
         name: "Bash"
 
-  - title: "OCR & Vision Testing"
+  - title: "OCR & Vision"
     icon: "eye"
     color_scheme: "purple"
     skills:
@@ -100,7 +100,7 @@ technical_groups:
       - icon: "video"
         name: "FFmpeg"
 
-  - title: "AI-Augmented Testing"
+  - title: "AI-Augmented Automation"
     icon: "brain"
     color_scheme: "purple"
     skills:
@@ -150,7 +150,7 @@ technical_groups:
       - icon: "fire"
         name: "Firestore"
 
-  - title: "Engineering Behind the Tests"
+  - title: "Engineering Behind the Suites"
     icon: "server"
     color_scheme: "purple"
     skills:
