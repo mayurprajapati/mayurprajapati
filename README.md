@@ -111,16 +111,3 @@ End-to-end market-intelligence system: Java/Hibernate scraping engine, Flask RES
 
 **B.C.A — Computer Application** · Gujarat · 2019
 
----
-
-## Regenerating the Résumé PDF
-
-`site/static/files/Mayur_Prajapati_Resume.pdf` (the file linked above and served by the live site) is rendered directly from [`resume/index.html`](./resume/index.html) via Playwright, sized to the rendered content's exact dimensions as a single-page PDF. After editing `resume/index.html`, regenerate it from the repo root:
-
-```bash
-pip install playwright
-playwright install chromium   # one-time browser install
-python resume/convert_resume_to_pdf.py
-```
-
-The script is [`resume/convert_resume_to_pdf.py`](./resume/convert_resume_to_pdf.py) — it always reads `resume/index.html` and writes `site/static/files/Mayur_Prajapati_Resume.pdf`.

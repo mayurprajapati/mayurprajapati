@@ -428,9 +428,22 @@ tail -f /var/log/mayurprajapati-deploy.log
 | `hugo.toml` | Site config / SEO / social |
 | `static/images/` | Profile photo, etc. |
 | `static/files/` | Resume PDF |
+| `resume/` | Resume HTML source & PDF generator |
 
 New post:
 
 ```bash
 hugo new content content/en/blog/my-post.md
 ```
+
+## Regenerating the Résumé PDF
+
+`static/files/Mayur_Prajapati_Resume.pdf` (served by the live site) is rendered directly from [`resume/index.html`](./resume/index.html) via Playwright, sized to the rendered content's exact dimensions as a single-page PDF. After editing `resume/index.html`, regenerate it:
+
+```bash
+pip install playwright
+playwright install chromium   # one-time browser install
+python resume/convert_resume_to_pdf.py
+```
+
+The script is [`resume/convert_resume_to_pdf.py`](./resume/convert_resume_to_pdf.py) — it reads `resume/index.html` and writes `static/files/Mayur_Prajapati_Resume.pdf`.

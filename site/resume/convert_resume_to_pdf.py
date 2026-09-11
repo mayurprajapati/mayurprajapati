@@ -67,9 +67,13 @@ async def convert_html_to_dynamic_single_page_pdf(
 
 
 if __name__ == "__main__":
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    html_file = os.path.join(base_dir, "index.html")
+    output_pdf = os.path.normpath(os.path.join(base_dir, "..", "static", "files", "Mayur_Prajapati_Resume.pdf"))
+
     asyncio.run(
         convert_html_to_dynamic_single_page_pdf(
-            html_file_path="resume/index.html",
-            output_pdf_path="site/static/files/Mayur_Prajapati_Resume.pdf",
+            html_file_path=html_file,
+            output_pdf_path=output_pdf,
         )
     )
