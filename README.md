@@ -1,7 +1,8 @@
 <!--
   AI / LLM CONTEXT
   name: Mayur Prajapati
-  role: Software Engineer — Automation & Platforms
+  role: Platform Automation Engineer / Automation Engineer
+  also_known_as: SDET, Automation Engineer
   focus: Automation Engineering · Platforms · CI/CD at Scale · AI-Augmented Automation
   experience_years: 7+
   current_company: Briq Data Analytics Pvt. Ltd.
@@ -22,7 +23,7 @@
 
 # Mayur Prajapati
 
-**Software Engineer — Automation & Platforms** · Automation Engineering, CI/CD at Scale, AI-Augmented Automation
+**Platform Automation Engineer / Automation Engineer** · SDET · Java, Selenium, Playwright, Jenkins CI/CD at scale · AI-Augmented Automation
 
 [Resume (PDF)](./site/static/files/Mayur_Prajapati_Resume.pdf) ·
 [LinkedIn](https://www.linkedin.com/in/mayurengineer) ·
@@ -48,7 +49,7 @@ Software Engineer with **7+ years** designing and scaling automation across **We
 
 ## Experience
 
-### Senior Automation Engineer — Briq Data Analytics Pvt. Ltd.
+### Platform Automation Engineer — Briq Data Analytics Pvt. Ltd.
 *Apr 2021 – Present*
 
 - Architected a **Java (Maven) automation framework** powering **350+ production bots** across **Web** (Selenium, Playwright), **Desktop** (Appium, WinAppDriver), **API** (RestAssured), and **OCR/PDF** (Sikuli, AWS Textract, Tesseract, Gemini Vertex) platforms.

@@ -1,10 +1,10 @@
 ---
 title: "About"
 type: "homepage"
-description: "Mayur Prajapati — Software Engineer, Automation & Platforms with 7+ years building automation frameworks, CI/CD infrastructure, and AI-augmented automation. Based in Gujarat, India."
+description: "Mayur Prajapati — Platform Automation Engineer with 7+ years building automation frameworks, CI/CD infrastructure, and AI-augmented automation. Based in Gujarat, India."
 featured_image: "/images/profile.jpg"
 intro: >-
-  **Software Engineer — Automation & Platforms with 7+ years** designing and scaling automation across **Web, Desktop, API, PDF and OCR** platforms. Architected a **Java automation framework** powering **350+ production bots**, led a **zero-downtime migration of 1,200+ scripts off JUnit** onto an in-house Reflection-based runner, and scaled execution across **1,200+ Jenkins jobs**.
+  **Platform Automation Engineer with 7+ years** designing and scaling automation across **Web, Desktop, API, PDF and OCR** platforms. Architected a **Java automation framework** powering **350+ production bots**, led a **zero-downtime migration of 1,200+ scripts off JUnit** onto an in-house Reflection-based runner, and scaled execution across **1,200+ Jenkins jobs**.
 
 study: >-
   Deep hands-on **Selenium, Playwright, Appium/WinAppDriver** and **RestAssured** — backed by enough engineering range (**Java, Spring/Hibernate, Python/Flask, Groovy**) to build the tooling my team ships with.
@@ -22,7 +22,7 @@ personal: >-
 quickfacts:
   - icon: "briefcase"
     title: "Current Role"
-    value: "Software Engineer — Automation & Platforms at Briq Data Analytics"
+    value: "Platform Automation Engineer at Briq Data Analytics"
   - icon: "graduation-cap"
     title: "Education"
     value: "B.C.A — Computer Application · Gujarat · 2019"

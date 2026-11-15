@@ -14,8 +14,8 @@ defaultContentLanguageInSubdir = false
     label = "English"
     weight = 1
     [languages.en.params]
-      tagline = "Software Engineer — Automation & Platforms at Briq. Selenium / Playwright / Appium · CI/CD at scale · AI-Augmented Automation"
-      hero_description = "Software Engineer — Automation & Platforms at Briq with 7+ years building automation frameworks across Web, Desktop, API, PDF and OCR — 350+ production bots, 1,200+ scripts migrated off JUnit, and execution scaled across 1,200+ Jenkins jobs."
+      tagline = "Platform Automation Engineer / Automation Engineer at Briq. SDET · Java / Selenium / Playwright · Jenkins CI/CD at scale · AI-Augmented Automation"
+      hero_description = "Platform Automation Engineer at Briq with 7+ years building automation frameworks across Web, Desktop, API, PDF and OCR — 350+ production bots, 1,200+ scripts migrated off JUnit, and execution scaled across 1,200+ Jenkins jobs."
       hero_location = "India"
       resume_url = "/files/Mayur_Prajapati_Resume.pdf"
       collab_tags = [
@@ -37,7 +37,7 @@ defaultContentLanguageInSubdir = false
   profile_image = "/images/profile.jpg"
   author = "Mayur Prajapati"
   og_image = "images/profile.jpg"
-  description = "Software Engineer — Automation & Platforms: automation frameworks, Selenium/Playwright/Appium, API automation, CI/CD at scale, and AI-augmented automation."
+  description = "Platform Automation Engineer / Automation Engineer (SDET): automation frameworks, Selenium/Playwright/Appium, API automation, CI/CD at scale, and AI-augmented automation."
 
   linkedin_url = "https://linkedin.com/in/mayurengineer"
   linkedin_text = "linkedin.com/in/mayurengineer"

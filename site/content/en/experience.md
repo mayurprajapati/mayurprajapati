@@ -1,7 +1,7 @@
 ---
 title: "Experience"
 type: "homepage"
-description: "Mayur Prajapati's work history — Software Engineer, Automation & Platforms at Briq Data Analytics (350+ automation bots, 1,200+ scripts migrated off JUnit) and Quality Assurance Analyst at Oracle."
+description: "Mayur Prajapati's work history — Platform Automation Engineer at Briq Data Analytics (350+ automation bots, 1,200+ scripts migrated off JUnit) and Quality Assurance Analyst at Oracle."
 intro: >-
   Building automation frameworks, CI/CD infrastructure, and AI-augmented automation that cut manual effort and speed up releases.
 
@@ -12,7 +12,7 @@ resume_downloads:
 positions:
   - company: "Briq Data Analytics Pvt. Ltd."
     company_key: "briq"
-    role: "Software Engineer — Automation & Platforms"
+    role: "Platform Automation Engineer"
     period: "Apr 2021 – Present"
     industry: "Construction Tech / Automation"
     location: "Remote / India"
